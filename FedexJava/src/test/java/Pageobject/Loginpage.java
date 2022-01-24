@@ -66,7 +66,19 @@ public class Loginpage {
 	@CacheLookup
 	WebElement btnlogin;
 
-
+	@FindBy(xpath = "//body/main[1]/div[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/button[1]/span[1]" )
+	@CacheLookup
+	WebElement btntrack;
+	
+	@FindBy(xpath = "//body/main[1]/div[1]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/form[1]/div[1]/input[1]" )
+	@CacheLookup
+	WebElement txtid;
+	
+	@FindBy(xpath = "//button[@id='btnSingleTrack']" )
+	@CacheLookup
+	WebElement btntracking;
+	
+	
 	//By txtalert = By.xpath("//header/fedex-alert[1]/div[1]");
 	//By closeicon = By.xpath("//body[1]/div[1]/header[1]/fedex-alert[1]/div[1]/div[1]/span[2]/svg[1]/g[1]/g[1]/path[2]");
 
@@ -139,6 +151,20 @@ public class Loginpage {
 	public void btnlogin() {
 		btnlogin.click();
 	}
+	
+//	public void track() {
+//		btntrack.click();
+//	}
+//	
+//	public void settrack(String trackid) {
+//		txtid.clear();
+//		txtid.sendKeys(trackid);
+//		
+//	}
+//	
+//	public void tracking() {
+//		btntracking.click();
+//	}
 
 	//public String getText() {
 	//	// TODO Auto-generated method stub

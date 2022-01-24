@@ -16,5 +16,5 @@ Scenario: Successfull login with valid credential
     And user enters userid as "Pradesh25" and pwd as "India@2022"
     When user click Remember my user ID
     And user clicks on login
-    Then login icon should be  displayed with username "Pradesh"
     And close browser
+    

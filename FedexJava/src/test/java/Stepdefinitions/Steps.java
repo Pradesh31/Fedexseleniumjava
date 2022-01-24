@@ -117,15 +117,13 @@ public class Steps extends Baseclass
 
 	}
 	@And("user clicks on login")
-	public void user_clicks_on_login() {
+	public void user_clicks_on_login(){
 		lp.btnlogin();
+		
 	}
-
-	@Then("login icon should be  displayed with username {string}")
-	public void login_icon_should_be_displayed_with_username(String string) throws InterruptedException {
-		Thread.sleep(2000);
-	}
-
+	
+	
+	
 	@And("close browser")
 	public void close_browser() {
 		driver.quit();
